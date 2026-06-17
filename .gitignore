@@ -1,0 +1,19 @@
+# Secrets — NEVER commit
+.env
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+
+# OS / IDE junk
+.DS_Store
+__MACOSX/
+.idea/
+.ipynb_checkpoints/
+
+# Data & models (commit small samples only, not the whole store)
+data/chroma_db/
+*.pkl
