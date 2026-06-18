@@ -1,6 +1,6 @@
 # Hospital Cost & Outcome Dashboard
 
-> Visual analytics and predictive modeling on real federal CMS healthcare data — integrating three government datasets to model hospital excess readmissions and surface the cost/quality drivers behind them.
+> Visual analytics and predictive modeling on real federal CMS healthcare data - integrating three government datasets to model hospital excess readmissions and surface the cost/quality drivers behind them.
 
 **Stack:** Python · pandas · scikit-learn · Random Forest · Matplotlib/Seaborn · dashboard/visual analytics
 **Domain:** Healthcare · Big Data · Predictive modeling · Visual analytics
@@ -16,7 +16,7 @@ Three public **CMS** datasets joined into one analytical table:
 - **Medicare Inpatient Providers**
 - **Hospital General Information**
 
-Joined on the **6-digit CMS Certification Number (CCN)** — standardized to string with zero-padding to make the key consistent across sources. HRRP was aggregated to hospital level (mean Excess/Predicted/Expected Readmission rates).
+Joined on the **6-digit CMS Certification Number (CCN)** - standardized to string with zero-padding to make the key consistent across sources. HRRP was aggregated to hospital level (mean Excess/Predicted/Expected Readmission rates).
 
 ## Approach
 - **Data engineering:** ingestion, cleaning of monetary fields, inner-join merge on CCN, and engineered **cost-ratio features**.
@@ -25,7 +25,7 @@ Joined on the **6-digit CMS Certification Number (CCN)** — standardized to str
 - **Visualization:** interactive dashboard of cost vs. outcome metrics by hospital.
 
 ## Results
-- **Random Forest outperformed linear regression** — lower RMSE and higher R² on the test set.
+- **Random Forest outperformed linear regression** - lower RMSE and higher R² on the test set.
 - Most important predictors: **payment metrics, engineered cost ratios, and readmission predictors**.
 - Residuals centered around zero, indicating reasonable model fit.
 
